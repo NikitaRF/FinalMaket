@@ -16,6 +16,16 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'TTLakes-Medium';
+  src: url(../fonts/TTLakes-Medium.eot?#iefix) format("eot"),
+  url(../fonts/TTLakes-Medium.woff) format("woff"),
+  url(../fonts/TTLakes-Medium.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
     background-color: #F8F8F8;
     font-family: "TT Lakes-regular", Arial, sans-serif;
@@ -301,5 +311,5 @@ body {
 
 
 @import "./style3.scss";
-
 @import "./swiper.min.css";
+@import "./style4.scss";
