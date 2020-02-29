@@ -4,6 +4,8 @@ body {
     background-color: #F8F8F8;
 }
 
+
+
 .container{
     width: 100%;
 }
@@ -68,9 +70,9 @@ body {
     margin-left: 32px;
     margin-top: 8px;
     margin-bottom: 24px;
-    display: none;
 
 }
+
 
 .icon-read-more {
     height: 24px;
@@ -186,6 +188,10 @@ body {
     .brand-block__brands {
         display: flex;
     }
+
+  .group__read-more--unvisible{
+    display: none;
+  }
 
     .shadow {
         position: absolute;
