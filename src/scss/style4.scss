@@ -1,7 +1,12 @@
+// <!--- Ремонт различных видов техники--->
+
+
 .equipment-block{
   display: flex;
   margin-left: 16px;
   margin-top: 16px;
+  width: auto;
+
 }
 
 .equipment-block__list{
@@ -22,10 +27,19 @@
 
 }
 
+.equipment-block__title{
+  margin-right: auto;
+}
+
+.equipment-block__button{
+    margin: auto 0 0 auto;
+}
+
+
 .footer{
+  border-top: 1px solid #D9FFF5;
   display: flex;
-  margin-left: 16px;
-  margin-right: 16px;
+  padding: 32px 16px 0 16px;
 }
 
 @media screen and (max-width: 768px){
@@ -35,9 +49,28 @@
     text-align: center !important;
   }
 
-  .footer_block--text_align--right{
-
+  .footer_block--text_align{
+    text-align: center !important;
   }
+
+  .footer_block{
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .equipment-block__list{
+    margin-right: 0;
+  }
+
+  .equipment-block{
+    margin-left:0;
+  }
+
+  .footer_block{
+    margin-bottom: 16px;
+  }
+
 }
 
 .footer_block{
@@ -51,6 +84,7 @@
 }
 
 
-.footer_block--text_align--right{
+.footer_block--text_align{
   text-align: right;
 }
+

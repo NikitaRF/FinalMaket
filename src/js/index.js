@@ -7,6 +7,8 @@ import '../scss/style.scss';
 window.onload = function bbb () {
 
     let hiddenElements = document.querySelectorAll('.brand-block__brands');
+    let hiddenElements2 = document.querySelectorAll('.equipment-block__list');
+    let hiddenElements3 = document.querySelectorAll('.price-block__list');
     let iconReadMore = document.querySelectorAll('.icon-read-more')[1];
     let buttonReadMore = document.querySelectorAll('.read-more')[1];
 
@@ -33,6 +35,8 @@ window.onload = function bbb () {
 
 
     let mySwiper = undefined;
+    let mySwiper2 = undefined;
+    let mySwiper3 = undefined;
     function swiperInitoff() {
 
     if (window.innerWidth <= 768 && mySwiper == undefined) {
@@ -49,19 +53,65 @@ window.onload = function bbb () {
 
             });
 
-             
+            for (let i = 0; i < hiddenElements2.length; i++) {
+              if (hiddenElements2[i].classList.contains('swiper-slide') === false) {
+                hiddenElements2[i].classList.add('swiper-slide');
+              }
+            }
+
+              mySwiper2 = new Swiper('.swiper-container2', {
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+
+              });
+
+
+              for (let i = 0; i < hiddenElements3.length; i++) {
+                if (hiddenElements3[i].classList.contains('swiper-slide') === false) {
+                  hiddenElements3[i].classList.add('swiper-slide');
+                }
+              }
+
+
+              mySwiper3 = new Swiper('.swiper-container3', {
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+
+              });
 
 
 
         } else if (window.innerWidth > 768 && mySwiper !== undefined) {
 
                     mySwiper.destroy(true, true);
+                    mySwiper2.destroy(true, true);
+                    mySwiper3.destroy(true, true);
                     mySwiper = undefined;
+                    mySwiper2 = undefined;
+                    mySwiper3 = undefined;
                     for (let i = 0; i < hiddenElements.length; i++) {
                         if (hiddenElements[i].classList.contains('swiper-slide')) {
                             hiddenElements[i].classList.remove('swiper-slide');
                         }
                     }
+
+
+                    for (let i = 0; i < hiddenElements2.length; i++) {
+                      if (hiddenElements2[i].classList.contains('swiper-slide')) {
+                        hiddenElements2[i].classList.remove('swiper-slide');
+                      }
+                    }
+
+
+                    for (let i = 0; i < hiddenElements3.length; i++) {
+                      if (hiddenElements3[i].classList.contains('swiper-slide')) {
+                        hiddenElements3[i].classList.remove('swiper-slide');
+                      }
+                    }
+
+
                 }
 
 }
@@ -71,6 +121,26 @@ window.onload = function bbb () {
 
 
     window.onresize = swiperInitoff;
+
+
+    // Всплывающее боковое меню
+
+    let contentSide = document.querySelector('.content-side');
+    let openButton = document.querySelector('.icon--burger');
+    let closeButton = document.querySelector('.icon--burger-side');
+  openButton.addEventListener('click', function(){
+    contentSide.classList.add('content-side--visible');
+  })
+
+  closeButton.addEventListener('click', function(){
+    contentSide.classList.remove('content-side--visible');
+  })
+
+  document.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27 && contentSide.classList.contains('content-side--visible')) {
+      contentSide.classList.remove('content-side--visible');
+    }
+  });
 
 };
 

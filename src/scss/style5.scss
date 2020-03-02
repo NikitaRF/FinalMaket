@@ -1,0 +1,159 @@
+// <!--- Цены на услуги--->
+
+.get_commerce{
+  font-weight: 500;
+  border: none;
+  background: none;
+  color: #1B1C21;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+.icon_get_commerce {
+  height: 10px;
+  width: 6px;
+  background-image: url("../img/icon_get_commerce.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s ease-in-out;
+  margin: auto 0 auto 9px;
+}
+
+.description_nds{
+  max-width: 421px;
+  margin:32px 0 16px 16px;
+  color: #1B1C21;
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.price-block{
+  display: flex;
+  flex-direction: column;
+
+
+  border-radius: 6px;
+  width: auto;
+}
+
+.price-block__row{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #EAEAEA;
+  width: auto;
+  padding: 23px 24px;
+  background: #FFFFFF;
+}
+
+.price-block__button{
+  background: #FF3E79;
+  border-radius: 16px;
+  font-family: TT Lakes;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  border: none;
+}
+
+.icon_price-block{
+  height: 10px;
+  width: 6px;
+  background-image: url("../img/icon_price-block.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s ease-in-out;
+  margin-left: 9px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.price-block__title{
+  width: 40%;
+}
+
+.price-block__price{
+  width: 20%;
+}
+
+.price-block__time{
+  width: 20%;
+}
+
+.price-block__order{
+margin-left: auto;
+}
+
+.price-block__row--title{
+  display: flex;
+  justify-content: space-between;
+
+  width: auto;
+  padding: 16px 24px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82;
+  mix-blend-mode: normal;
+  opacity: 0.72;
+  font-family: TTLakes-Medium;
+}
+
+.price-block__info--visible{
+  display: none;
+}
+
+.price-block__property--mobile{
+  font-family: TTLakes-Medium;
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82;
+  mix-blend-mode: normal;
+  opacity: 0.72;
+  margin-top: 16px;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .price-block__row{
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  .price-block {
+    flex-direction: row;
+  }
+
+  .price-block__row--title{
+    display: none;
+  }
+
+  .price-block__title{
+    width: 100%;
+  }
+
+  .price-block__price{
+    width: 100%;
+  }
+
+  .price-block__time{
+    width: 50%;
+  }
+
+  .price-block__order{
+   margin-left: auto;
+  }
+
+  .price-block__info--visible{
+    display: block;
+  }
+
+
+}
