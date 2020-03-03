@@ -6,6 +6,119 @@
         <title>Верстка по макету</title>
     </head>
     <body>
+
+
+    <!-- Боковое меню -->
+
+    <div class="forModal">
+    </div>
+    <div class="content-side">
+
+      <div class='upper-menu-side'>
+
+        <button class="icon-side icon--burger-side">
+        </button>
+
+        <div class='upper-menu__logo'>
+          <img src="./img/logo.svg" alt="logo">
+        </div>
+
+        <button class="icon-side icon--search-side">
+        </button>
+
+      </div>
+
+
+      <div style="display: flex; flex-direction: column; height: 100vh;">
+
+        <div style="margin-bottom: 40px;">
+
+          <div class='menu-top'>
+            <div class='menu__group'>
+              <svg class='highlight menu__button--active-side' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
+              </svg>
+              <a href="#" class='menu__button-side menu__button--active-side'>Ремонт техники</a>
+            </div>
+            <div class='menu__group'>
+              <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
+              </svg>
+              <a  href="#" class='menu__button-side'>Корпоративным клиентам</a>
+            </div>
+            <div class='menu__group'>
+              <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
+              </svg>
+              <a  href="#" class='menu__button-side'>Продавцам техники</a>
+            </div>
+            <div class='menu__group'>
+              <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
+              </svg>
+              <a  href="#" class='menu__button-side'>Партнерам</a>
+            </div>
+            <div class='menu__group'>
+              <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
+              </svg>
+              <a  href="#" class='menu__button-side'>Производителям</a>
+            </div>
+            <div class='menu__group'>
+              <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
+              </svg>
+              <a  href="#" class="menu__button-side">Наши сервисные центры</a>
+            </div>
+            <div class="menu__group">
+              <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
+              </svg>
+              <a  href="#" class="menu__button-side">Контакты</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top: auto; margin-bottom: 90px; ">
+
+
+
+          <div class="menu-bottom-side">
+            <div class="menu-bottom__container-side">
+              <button class="icon-side icon--call-side">
+              </button>
+              <button class="icon-side icon--chat-side">
+              </button>
+              <button class="icon-side icon--profile-side">
+              </button>
+            </div>
+          </div>
+
+          <div class="block-mail">
+            <a class="block-mail__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+          </div>
+
+          <div class="block-tell">
+            <a class="block-tell__tel" href="tel: 8 800 890 8900">8 800 890 8900</a>
+          </div>
+
+
+          <div class="menu-lang">
+            <button class="menu-lang__button menu-lang__button--active">RU</button>
+            <button class="menu-lang__button">EN</button>
+            <button class="menu-lang__button">CH</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
         <header>
             <div class='upper-menu'>
 
@@ -220,22 +333,22 @@
 
               <div class="equipment-block swiper-wrapper">
 
-                <div class="equipment-block__list equipment-block__list--properties">
+                <div class="equipment-block__list equipment-block__list--properties equipment-block__list--medium-visible">
                   <span class="equipment-block__title">Ремонт ноутбуков</span>
                   <a href='#' class="equipment-block__button brands-button"></a>
                 </div>
 
-                <div class="equipment-block__list equipment-block__list--properties">
+                <div class="equipment-block__list equipment-block__list--properties equipment-block__list--medium-visible">
                   <span class="equipment-block__title">Ремонт планшетов</span>
                   <a href='#' class=" equipment-block__button brands-button"></a>
                 </div>
 
-                <div class="equipment-block__list equipment-block__list--properties">
+                <div class="equipment-block__list equipment-block__list--properties equipment-block__list--medium-visible">
                   <span class="equipment-block__title">Ремонт ПК</span>
                   <a href='#' class="equipment-block__button brands-button"></a>
                 </div>
 
-                <div class="equipment-block__list equipment-block__list--properties" >
+                <div class="equipment-block__list equipment-block__list--properties equipment-block__list--large-visible" >
                   <span class="equipment-block__title">Ремонт Мониторов</span>
                   <a href='#' class="equipment-block__button brands-button"></a>
                 </div>
@@ -337,7 +450,7 @@
               <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
             </div>
 
-            <div class='group__read-more group__read-more--unvisible'>
+            <div class='group__read-more '>
               <button class="get_commerce">Получить коммерческое предложение</button>
               <div class="icon_get_commerce"></div>
             </div>
@@ -348,112 +461,7 @@
 </main>
 
 
-        <!-- Боковое меню -->
 
-
-        <div class="content-side">
-
-          <div class='upper-menu-side'>
-
-            <button class="icon-side icon--burger-side">
-            </button>
-
-            <div class='upper-menu__logo'>
-              <img src="./img/logo.svg">
-            </div>
-
-            <button class="icon-side icon--search-side">
-            </button>
-
-          </div>
-
-
-          <div style="display: flex; flex-direction: column; height: 100vh;">
-
-            <div style="margin-bottom: 40px;">
-
-              <div class='menu-top'>
-                <div class='menu__group'>
-                  <svg class='highlight menu__button--active-side' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
-                  </svg>
-                  <a href="#" class='menu__button-side menu__button--active-side'>Ремонт техники</a>
-                </div>
-                <div class='menu__group'>
-                  <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
-                  </svg>
-                  <a  href="#" class='menu__button-side'>Корпоративным клиентам</a>
-                </div>
-                <div class='menu__group'>
-                  <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
-                  </svg>
-                  <a  href="#" class='menu__button-side'>Продавцам техники</a>
-                </div>
-                <div class='menu__group'>
-                  <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
-                  </svg>
-                  <a  href="#" class='menu__button-side'>Партнерам</a>
-                </div>
-                <div class='menu__group'>
-                  <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
-                  </svg>
-                  <a  href="#" class='menu__button-side'>Производителям</a>
-                </div>
-                <div class='menu__group'>
-                  <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
-                  </svg>
-                  <a  href="#" class="menu__button-side">Наши сервисные центры</a>
-                </div>
-                <div class="menu__group">
-                  <svg class='highlight' width="4" height="32" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7"/>
-                  </svg>
-                  <a  href="#" class="menu__button-side">Контакты</a>
-                </div>
-              </div>
-
-            </div>
-
-            <div style="margin-top: auto; ">
-
-
-
-              <div class="menu-bottom-side">
-                <div class="menu-bottom__container-side">
-                  <button class="icon-side icon--call-side">
-                  </button>
-                  <button class="icon-side icon--chat-side">
-                  </button>
-                  <button class="icon-side icon--profile-side">
-                  </button>
-                </div>
-              </div>
-
-              <div class="block-mail">
-                <a class="block-mail__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-              </div>
-
-              <div class="block-tell">
-                <a class="block-tell__tel" href="tel: 8 800 890 8900">8 800 890 8900</a>
-              </div>
-
-
-              <div class="menu-lang">
-                <button class="menu-lang__button menu-lang__button--active">RU</button>
-                <button class="menu-lang__button">EN</button>
-                <button class="menu-lang__button">CH</button>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
 
 
 
@@ -465,6 +473,8 @@
           <span class="footer_block">Политика конфиденциальности </span>
           <span class="footer_block footer_block--text_align">Информация, размещенная на данной странице, не является публичной офертой </span>
         </footer>
+
+
 
     </body>
 </html>

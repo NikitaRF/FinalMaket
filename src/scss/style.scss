@@ -41,7 +41,7 @@ body {
     align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 982px) {
 
     .info-block {
         display: flex;
@@ -62,7 +62,7 @@ body {
         margin-top: 24px;
     }
 
-    .group__read-more{
+    .group__read-more {
         order: 2;
     }
 }
@@ -71,7 +71,7 @@ body {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 982px) {
     .upper-menu{
         display: flex !important;
     }

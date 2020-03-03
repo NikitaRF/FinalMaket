@@ -10,26 +10,45 @@ window.onload = function bbb () {
     let hiddenElements2 = document.querySelectorAll('.equipment-block__list');
     let hiddenElements3 = document.querySelectorAll('.price-block__list');
     let iconReadMore = document.querySelectorAll('.icon-read-more')[1];
+    let iconReadMore2 = document.querySelectorAll('.icon-read-more')[2];
     let buttonReadMore = document.querySelectorAll('.read-more')[1];
+    let buttonReadMore2 = document.querySelectorAll('.read-more')[2];
 
     function visibleMore () {
 
-        for (let i = 0; i < hiddenElements.length; i++){
-            if (hiddenElements[i].classList.contains("brand-block__brands--visible")) {
-                hiddenElements[i].classList.remove('brand-block__brands--visible');
-                hiddenElements[i].classList.add('brand-block__brands--unvisible');
-                buttonReadMore.innerHTML = "Показать все";
-                iconReadMore.style.transform = "rotate(360deg)";
-            } else {
-                hiddenElements[i].classList.add('brand-block__brands--visible');
-                buttonReadMore.innerHTML = "Скрыть";
-                iconReadMore.style.transform = "rotate(180deg)";
-                hiddenElements[i].classList.remove('brand-block__brands--unvisible');
-            }
+      for (let i = 0; i < hiddenElements.length; i++) {
+        if (hiddenElements[i].classList.contains("brand-block__brands--visible")) {
+          hiddenElements[i].classList.remove('brand-block__brands--visible');
+          hiddenElements[i].classList.add('brand-block__brands--unvisible');
+          buttonReadMore.innerHTML = "Показать все";
+          iconReadMore.style.transform = "rotate(360deg)";
+        } else {
+          hiddenElements[i].classList.add('brand-block__brands--visible');
+          buttonReadMore.innerHTML = "Скрыть";
+          iconReadMore.style.transform = "rotate(180deg)";
+          hiddenElements[i].classList.remove('brand-block__brands--unvisible');
         }
+      }
+    }
+
+    function visibleMore2 () {
+      for (let i = 0; i < hiddenElements2.length; i++){
+        if (hiddenElements2[i].classList.contains("equipment-block__list--visible")) {
+          hiddenElements2[i].classList.remove('equipment-block__list--visible');
+          hiddenElements2[i].classList.add('equipment-block__list--unvisible');
+          buttonReadMore2.innerHTML = "Показать все";
+          iconReadMore2.style.transform = "rotate(360deg)";
+        } else {
+          hiddenElements2[i].classList.add('equipment-block__list--visible');
+          buttonReadMore2.innerHTML = "Скрыть";
+          iconReadMore2.style.transform = "rotate(180deg)";
+          hiddenElements2[i].classList.remove('equipment-block__list--unvisible');
+        }
+      }
     }
 
     buttonReadMore.addEventListener("click", visibleMore);
+    buttonReadMore2.addEventListener("click", visibleMore2);
 
     //slider swiper:
 
@@ -123,22 +142,27 @@ window.onload = function bbb () {
     window.onresize = swiperInitoff;
 
 
-    // Всплывающее боковое меню
+    //Всплывающее боковое меню
 
     let contentSide = document.querySelector('.content-side');
     let openButton = document.querySelector('.icon--burger');
     let closeButton = document.querySelector('.icon--burger-side');
+    let forModal = document.querySelector('.forModal');
+
   openButton.addEventListener('click', function(){
     contentSide.classList.add('content-side--visible');
+    forModal.classList.add('bg-forModal--opacity')
   })
 
   closeButton.addEventListener('click', function(){
     contentSide.classList.remove('content-side--visible');
+    forModal.classList.remove('bg-forModal--opacity')
   })
 
   document.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27 && contentSide.classList.contains('content-side--visible')) {
       contentSide.classList.remove('content-side--visible');
+      forModal.classList.remove('bg-forModal--opacity');
     }
   });
 
