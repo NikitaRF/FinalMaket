@@ -49,8 +49,6 @@ body {
     width: 100%; }
   .group {
     width: 50%; }
-  .group__full-text--visible:nth-child(2) {
-    display: none; }
   .group__description {
     order: 0;
     margin-top: 24px; }
@@ -64,8 +62,6 @@ body {
     display: none; }
   .icon {
     margin: 0 10px; }
-  .group__full-text--visible:nth-child(3) {
-    display: none; }
   .title__second-title--hidden {
     display: none; }
   .icon--call {
@@ -91,8 +87,6 @@ body {
     overflow: scroll; } }
 
 @media screen and (max-width: 540px) {
-  .group__full-text--visible:not(:first-child) {
-    display: none; }
   .menu {
     overflow: scroll;
     flex-wrap: nowrap !important;
@@ -158,7 +152,8 @@ body {
   padding: 0 16px;
   letter-spacing: 0.2px;
   font-size: 14px;
-  line-height: 18px; }
+  line-height: 18px;
+  display: none; }
 
 .group__read-more {
   display: flex;
@@ -230,6 +225,26 @@ body {
 
 .title-block {
   border-top: 1px solid #D9FFF5; }
+
+.group__description--visible {
+  display: block; }
+
+.group__description--unvisible {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  .group__full-text--visible--small {
+    display: block; } }
+
+@media screen and (min-width: 768px) {
+  .group__full-text--visible--small {
+    display: block; }
+  .group__full-text--visible--medium {
+    display: block; } }
+
+@media screen and (min-width: 1240px) {
+  .group__full-text--visible--large {
+    display: block; } }
 
 body {
   padding: 0;
@@ -660,10 +675,6 @@ button::-moz-focus-inner {
     position: absolute;
     left: -86px; } }
 
-@media screen and (max-width: 320px) {
-  call_menu {
-    width: 320px; } }
-
 .feedback-menu {
   width: 440px;
   position: fixed;
@@ -861,7 +872,19 @@ button::-moz-focus-inner {
   .icon--burger-side {
     display: none; }
   main {
+    margin-left: 361px; }
+  footer {
     margin-left: 361px; } }
+
+@media screen and (max-width: 480px) {
+  .call_menu {
+    width: 100%; }
+  .feedback-menu {
+    width: 100%; }
+  .feedback-menu__input {
+    width: 80%; }
+  .call_menu__tel {
+    width: 80%; } }
 
 
 /*# sourceMappingURL=style.css.map*/
