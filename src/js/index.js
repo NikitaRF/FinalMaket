@@ -260,6 +260,14 @@ window.onload = function bbb () {
 
 
 
+  forModal.addEventListener('click', function () {
+      contentSide.classList.remove('content-side--visible');
+      callMenu.classList.remove('content-side--visible');
+      feedbackMenu.classList.remove('content-side--visible');
+      forModal.classList.remove('bg-forModal--opacity');
+
+  });
+  
 
 };
 
