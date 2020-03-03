@@ -80,11 +80,7 @@
   }
 }
 
-@media screen and (max-width: 320px){
-  call_menu{
-    width: 320px;
-  }
-}
+
 
 
 .feedback-menu{
@@ -343,6 +339,26 @@
     margin-left: 361px;
   }
 
+  footer{
+    margin-left: 361px;
+  }
+
 }
 
+@media screen and (max-width: 480px){
+  .call_menu{
+    width: 100%;
+  }
 
+  .feedback-menu{
+    width: 100%;
+  }
+
+  .feedback-menu__input{
+    width: 80%;
+  }
+
+  .call_menu__tel{
+    width: 80%;
+  }
+}

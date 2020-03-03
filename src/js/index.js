@@ -6,11 +6,14 @@ import '../scss/style.scss';
 
 window.onload = function bbb () {
 
+    let hiddenElements0 = document.querySelectorAll('.group__description');
     let hiddenElements = document.querySelectorAll('.brand-block__brands');
     let hiddenElements2 = document.querySelectorAll('.equipment-block__list');
     let hiddenElements3 = document.querySelectorAll('.price-block__list');
+    let iconReadMore0 = document.querySelectorAll('.icon-read-more')[0];
     let iconReadMore = document.querySelectorAll('.icon-read-more')[1];
     let iconReadMore2 = document.querySelectorAll('.icon-read-more')[2];
+    let buttonReadMore0 = document.querySelectorAll('.read-more')[0];
     let buttonReadMore = document.querySelectorAll('.read-more')[1];
     let buttonReadMore2 = document.querySelectorAll('.read-more')[2];
 
@@ -47,8 +50,26 @@ window.onload = function bbb () {
       }
     }
 
+  function visibleMore0 () {
+
+    for (let i = 0; i < hiddenElements0.length; i++) {
+      if (hiddenElements0[i].classList.contains("group__description--visible")) {
+        hiddenElements0[i].classList.remove('group__description--visible');
+        hiddenElements0[i].classList.add('group__description--unvisible');
+        buttonReadMore0.innerHTML = "Показать все";
+        iconReadMore.style.transform = "rotate(360deg)";
+      } else {
+        hiddenElements0[i].classList.add('group__description--visible');
+        buttonReadMore0.innerHTML = "Скрыть";
+        iconReadMore0.style.transform = "rotate(180deg)";
+        hiddenElements0[i].classList.remove('group__description--unvisible');
+      }
+    }
+  }
+
     buttonReadMore.addEventListener("click", visibleMore);
     buttonReadMore2.addEventListener("click", visibleMore2);
+    buttonReadMore0.addEventListener("click", visibleMore0);
 
     //slider swiper:
 
@@ -176,11 +197,14 @@ window.onload = function bbb () {
   let closeButtonCallMenu = document.querySelector('.icon--close');
   callSide.addEventListener('click', function(){
     callMenu.classList.add('content-side--visible');
-    forModal.classList.add('bg-forModal--opacity')
+    forModal.classList.add('bg-forModal--opacity');
+    if (contentSide.classList.contains('content-side--visible')){
+      contentSide.classList.remove('content-side--visible');
+    }
   })
   callSideUpperMenu.addEventListener('click', function(){
     callMenu.classList.add('content-side--visible');
-    forModal.classList.add('bg-forModal--opacity')
+    forModal.classList.add('bg-forModal--opacity');
   })
 
 
@@ -208,10 +232,13 @@ window.onload = function bbb () {
   chatSide.addEventListener('click', function(){
     feedbackMenu.classList.add('content-side--visible');
     forModal.classList.add('bg-forModal--opacity')
+    if (contentSide.classList.contains('content-side--visible')){
+      contentSide.classList.remove('content-side--visible');
+    }
   })
   chatSideUpperMenu.addEventListener('click', function(){
     feedbackMenu.classList.add('content-side--visible');
-    forModal.classList.add('bg-forModal--opacity')
+    forModal.classList.add('bg-forModal--opacity');
   })
 
 
