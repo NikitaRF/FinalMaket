@@ -166,6 +166,74 @@ window.onload = function bbb () {
     }
   });
 
+  //Заказать звонок
+
+
+
+  let callSide = document.querySelector('.icon--call-side');
+  let callSideUpperMenu = document.querySelector('.icon--call');
+  let callMenu = document.querySelector('.call_menu');
+  let closeButtonCallMenu = document.querySelector('.icon--close');
+  callSide.addEventListener('click', function(){
+    callMenu.classList.add('content-side--visible');
+    forModal.classList.add('bg-forModal--opacity')
+  })
+  callSideUpperMenu.addEventListener('click', function(){
+    callMenu.classList.add('content-side--visible');
+    forModal.classList.add('bg-forModal--opacity')
+  })
+
+
+  closeButtonCallMenu.addEventListener('click', function(){
+    callMenu.classList.remove('content-side--visible');
+    forModal.classList.remove('bg-forModal--opacity')
+  })
+
+  document.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27 && callMenu.classList.contains('content-side--visible')) {
+      callMenu.classList.remove('content-side--visible');
+      forModal.classList.remove('bg-forModal--opacity');
+    }
+  });
+
+
+  //Обратная связь
+
+
+  let chatSide = document.querySelector('.icon--chat-side');
+  let chatSideUpperMenu = document.querySelector('.icon--chat');
+  let feedbackMenu = document.querySelector('.feedback-menu');
+  let closeButtonfeedbackMenu = document.querySelector('.icon--close--feedback');
+
+  chatSide.addEventListener('click', function(){
+    feedbackMenu.classList.add('content-side--visible');
+    forModal.classList.add('bg-forModal--opacity')
+  })
+  chatSideUpperMenu.addEventListener('click', function(){
+    feedbackMenu.classList.add('content-side--visible');
+    forModal.classList.add('bg-forModal--opacity')
+  })
+
+
+
+  closeButtonfeedbackMenu.addEventListener('click', function(){
+    feedbackMenu.classList.remove('content-side--visible');
+    forModal.classList.remove('bg-forModal--opacity')
+  })
+
+
+
+  document.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27 && callMenu.classList.contains('content-side--visible')) {
+      feedbackMenu.classList.remove('content-side--visible');
+      forModal.classList.remove('bg-forModal--opacity');
+    }
+  });
+
+
+
+
+
 };
 
 
