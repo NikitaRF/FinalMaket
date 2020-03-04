@@ -412,6 +412,7 @@ button::-moz-focus-inner {
 
 .equipment-block__list--properties {
   box-sizing: border-box;
+  font-family: TTLakes-Medium;
   border-radius: 6px;
   min-width: 240px;
   min-height: 160px;
@@ -774,7 +775,8 @@ button::-moz-focus-inner {
   background-color: inherit;
   padding-left: 20px;
   height: 32px;
-  color: #1B1C21; }
+  color: #1B1C21;
+  font-family: TTLakes-Medium; }
 
 .menu__button:not(.menu__button--active-side),
 .block-mail__mail,
