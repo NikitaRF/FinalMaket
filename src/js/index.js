@@ -235,6 +235,9 @@ window.onload = function bbb () {
     if (contentSide.classList.contains('content-side--visible')){
       contentSide.classList.remove('content-side--visible');
     }
+
+
+
   })
   chatSideUpperMenu.addEventListener('click', function(){
     feedbackMenu.classList.add('content-side--visible');

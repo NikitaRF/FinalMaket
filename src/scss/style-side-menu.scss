@@ -13,7 +13,7 @@
     overflow: auto;
 
     transform: translateX(-700px);
-
+    transition: 0.3s ease-in-out;
 }
 
 .call_menu {
@@ -30,6 +30,7 @@
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
   height: 100vh;
 
+  transition: 0.3s ease-in-out;
   transform: translateX(700px);
 }
 
@@ -100,6 +101,7 @@
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
   height: 100vh;
 
+  transition: 0.3s ease-in-out;
   transform: translateX(700px);
 }
 
@@ -128,7 +130,7 @@
   background: #FFFFFF;
   z-index: -100;
   opacity: 0;
-
+  transition: 0.3s ease-in-out;
 }
 
 
