@@ -126,9 +126,9 @@
   right: 0;
   bottom: 0;
   background: #FFFFFF;
-  z-index: 100;
-  opacity: 1;
-  display: none;
+  z-index: -100;
+  opacity: 0;
+
 }
 
 
@@ -140,7 +140,9 @@
 }
 
 .bg-forModal--opacity{
-  display: block;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .upper-menu-side {
