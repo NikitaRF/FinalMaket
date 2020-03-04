@@ -325,7 +325,7 @@
 
 @media screen and (min-width: 982px){
   .content-side {
-    display: block;
+    transform: translateX(0);
     box-shadow: none;
     border-right: 1px solid #D9FFF5;
     position: fixed;
