@@ -621,7 +621,7 @@ button::-moz-focus-inner {
   left: 0;
   min-height: 100%;
   overflow: auto;
-  display: none; }
+  transform: translateX(-700px); }
 
 .call_menu {
   width: 440px;
@@ -636,7 +636,7 @@ button::-moz-focus-inner {
   color: #1B1C21;
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
   height: 100vh;
-  display: none; }
+  transform: translateX(700px); }
 
 .call_menu__tel {
   box-sizing: border-box;
@@ -693,7 +693,7 @@ button::-moz-focus-inner {
   color: #1B1C21;
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
   height: 100vh;
-  display: none; }
+  transform: translateX(700px); }
 
 .feedback-menu__input {
   box-sizing: border-box;
@@ -720,7 +720,8 @@ button::-moz-focus-inner {
   display: none; }
 
 .content-side--visible {
-  display: block; }
+  transform: translateX(0);
+  transition: 0.3s ease-in-out; }
 
 .bg-forModal--opacity {
   display: block; }
