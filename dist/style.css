@@ -234,7 +234,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .group__full-text--visible--small {
-    display: block; } }
+    display: block; }
+  .swiper-pagination {
+    margin-bottom: 20px; } }
 
 @media screen and (min-width: 768px) {
   .group__full-text--visible--small {

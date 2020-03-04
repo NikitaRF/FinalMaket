@@ -267,7 +267,7 @@ window.onload = function bbb () {
       forModal.classList.remove('bg-forModal--opacity');
 
   });
-  
+
 
 };
 
