@@ -269,6 +269,53 @@ window.onload = function bbb () {
   });
 
 
+  //Боковое меню, переключение по пунктам меню
+
+  let sideMenuItemLink = document.querySelector('.menu-top').querySelectorAll('.menu__button-side');
+  let sideMenuItemHighlight = document.querySelector('.menu-top').querySelectorAll('.highlight');
+
+  for (let i = 0; i < sideMenuItemLink.length; i++) {
+    sideMenuItemLink[i].addEventListener('click', function () {
+
+      for (let i = 0; i < sideMenuItemLink.length; i++) {
+        sideMenuItemLink[i].classList.remove('menu__button--active-side');
+        sideMenuItemHighlight[i].classList.remove('menu__button--active-side');
+      }
+
+      if (!(sideMenuItemLink[i].classList.contains('menu__button--active-side')) && !(sideMenuItemHighlight[i].classList.contains('menu__button--active-side'))) {
+        sideMenuItemLink[i].classList.add('menu__button--active-side');
+        sideMenuItemHighlight[i].classList.add('menu__button--active-side');
+      }
+
+    })
+  }
+
+
+  //Центральное меню, переключение по пунктам меню
+
+  let menuItemLink = document.querySelector('.menu').querySelectorAll('.menu__button');
+
+
+  for (let i = 0; i < menuItemLink.length; i++) {
+    menuItemLink[i].addEventListener('click', function () {
+
+      for (let i = 0; i < menuItemLink.length; i++) {
+        menuItemLink[i].classList.remove('menu__button--active');
+
+      }
+
+      if (!(menuItemLink[i].classList.contains('menu__button--active'))) {
+        menuItemLink[i].classList.add('menu__button--active');
+
+      }
+
+    })
+  }
+
+
+
+
+
 };
 
 
