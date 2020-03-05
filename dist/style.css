@@ -232,6 +232,9 @@ body {
 .group__description--unvisible {
   display: none; }
 
+.swiper-wrapper {
+  margin-top: 16px; }
+
 @media screen and (max-width: 768px) {
   .group__full-text--visible--small {
     display: block; }
@@ -511,7 +514,6 @@ button::-moz-focus-inner {
 .price-block {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
   margin-right: 16px;
   border-radius: 6px;
   width: auto; }
@@ -587,6 +589,10 @@ button::-moz-focus-inner {
   opacity: 0.72;
   margin-top: 16px;
   width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .price-block {
+    margin-left: 16px; } }
 
 @media screen and (max-width: 768px) {
   .price-block__row {

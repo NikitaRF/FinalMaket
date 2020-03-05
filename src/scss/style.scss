@@ -309,6 +309,10 @@ body {
   display: none;
 }
 
+.swiper-wrapper{
+  margin-top: 16px;
+}
+
 
 @media screen and (max-width: 768px){
   .group__full-text--visible--small{
@@ -336,6 +340,7 @@ body {
     display: block;
   }
 }
+
 
 
 
