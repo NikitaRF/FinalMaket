@@ -136,6 +136,7 @@ margin-left: auto;
     flex-direction: row;
     box-sizing: border-box;
     flex-wrap: wrap;
+    border: 1px solid #EAEAEA;
   }
 
   .price-block {
@@ -144,6 +145,7 @@ margin-left: auto;
 
   .price-block__row--title{
     display: none;
+
   }
 
   .price-block__title{

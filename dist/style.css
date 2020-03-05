@@ -266,7 +266,7 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
   text-transform: uppercase;
-  font-family: 'TTLakes'; }
+  font-family: "TT Lakes-regular"; }
 
 .title-block__title {
   padding: 16px 24px;
@@ -598,7 +598,8 @@ button::-moz-focus-inner {
   .price-block__row {
     flex-direction: row;
     box-sizing: border-box;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    border: 1px solid #EAEAEA; }
   .price-block {
     flex-direction: row; }
   .price-block__row--title {
