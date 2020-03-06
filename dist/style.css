@@ -35,6 +35,9 @@ body {
   padding: 0;
   margin: 0; }
 
+a, button {
+  cursor: pointer; }
+
 .upper-menu {
   display: none;
   width: auto;
@@ -801,18 +804,17 @@ button::-moz-focus-inner {
   color: #1B1C21;
   font-family: TTLakes-Medium; }
 
-.menu__button-side:not(.menu__button--active-side),
+.menu__button-side,
 .block-mail__mail,
 .block-tell__tel,
-.menu-lang__button:not(.menu-lang__button--active) {
+.menu-lang__button {
   transition: opacity, color 0.2s ease-in-out; }
 
-.menu__button-side:not(.menu__button--active-side):hover,
+.menu__button-side:hover,
 .block-mail__mail:hover,
 .block-tell__tel:hover,
-.menu-lang__button:not(.menu-lang__button--active):hover {
-  opacity: 0.8;
-  color: #FF3E79; }
+.menu-lang__button:hover {
+  color: #7E7E82; }
 
 .menu__group {
   display: flex;
