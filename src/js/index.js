@@ -338,6 +338,26 @@ window.onload = function bbb () {
   }
 
 
+  //Боковое меню, выбор языка, переключение по пунктам меню
+
+  let sideMenuLangLink = document.querySelector('.menu-lang').querySelectorAll('.menu-lang__button');
+
+
+  for (let i = 0; i < sideMenuLangLink.length; i++) {
+    sideMenuLangLink[i].addEventListener('click', function () {
+
+      for (let i = 0; i < sideMenuLangLink.length; i++) {
+        sideMenuLangLink[i].classList.remove('menu-lang__button--active');
+
+      }
+
+      if (!(sideMenuLangLink[i].classList.contains('menu-lang__button--active'))) {
+        sideMenuLangLink[i].classList.add('menu-lang__button--active');
+
+      }
+
+    })
+  }
 
 
 
