@@ -118,7 +118,11 @@ body {
   margin-right: auto; }
 
 .title__highlight {
-  margin-right: 12px; }
+  margin-right: 12px;
+  background: #41F6D7;
+  border-radius: 2px;
+  width: 4px;
+  height: 40px; }
 
 .title__second-title:nth-child(2n) {
   padding: 0 10px; }
@@ -816,7 +820,10 @@ button::-moz-focus-inner {
 .highlight {
   display: none;
   margin-right: -4px;
-  background-image: url(./static/highlight.svg); }
+  background: #41F6D7;
+  border-radius: 2px;
+  width: 4px;
+  height: 32px; }
 
 .menu__button--active-side {
   display: block;
@@ -891,7 +898,10 @@ button::-moz-focus-inner {
     left: 0;
     z-index: 100; }
   .upper-menu__logo {
-    margin-left: 22px; }
+    margin-left: 22px;
+    background: url(./static/logo.svg) no-repeat;
+    width: 98px;
+    height: 52px; }
   .icon--burger-side {
     display: none; }
   main {

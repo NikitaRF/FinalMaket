@@ -74,19 +74,19 @@ window.onload = function bbb () {
     //slider swiper:
 
 
-    let mySwiper = undefined;
-    let mySwiper2 = undefined;
-    let mySwiper3 = undefined;
+    let mySwiperBrandBlock = undefined;
+    let mySwiperEquipmentBlock = undefined;
+    let mySwiperPriceBlock = undefined;
     function swiperInitoff() {
 
-    if (window.innerWidth <= 768 && mySwiper == undefined) {
+    if (window.innerWidth <= 768 && mySwiperBrandBlock == undefined) {
         for (let i = 0; i < hiddenElements.length; i++) {
             if (hiddenElements[i].classList.contains('swiper-slide') === false) {
                 hiddenElements[i].classList.add('swiper-slide');
             }
         }
 
-             mySwiper = new Swiper('.swiper-container', {
+             mySwiperBrandBlock = new Swiper('.swiper-container', {
                width: 240,
                spaceBetween: 16,
                 pagination: {
@@ -102,7 +102,7 @@ window.onload = function bbb () {
               }
             }
 
-              mySwiper2 = new Swiper('.swiper-container2', {
+              mySwiperEquipmentBlock = new Swiper('.swiper-container2', {
                 width: 240,
                 spaceBetween: 16,
                 pagination: {
@@ -120,7 +120,7 @@ window.onload = function bbb () {
               }
 
 
-              mySwiper3 = new Swiper('.swiper-container3', {
+              mySwiperPriceBlock = new Swiper('.swiper-container3', {
                 width: 260,
                 // slidesOffsetBefore: 16,
                 // slidesOffsetAfter: 16,
@@ -134,14 +134,14 @@ window.onload = function bbb () {
 
 
 
-        } else if (window.innerWidth > 768 && mySwiper !== undefined) {
+        } else if (window.innerWidth > 768 && mySwiperBrandBlock !== undefined) {
 
-                    mySwiper.destroy(true, true);
-                    mySwiper2.destroy(true, true);
-                    mySwiper3.destroy(true, true);
-                    mySwiper = undefined;
-                    mySwiper2 = undefined;
-                    mySwiper3 = undefined;
+                    mySwiperBrandBlock.destroy(true, true);
+                    mySwiperEquipmentBlock.destroy(true, true);
+                    mySwiperPriceBlock.destroy(true, true);
+                    mySwiperBrandBlock = undefined;
+                    mySwiperEquipmentBlock = undefined;
+                    mySwiperPriceBlock = undefined;
                     for (let i = 0; i < hiddenElements.length; i++) {
                         if (hiddenElements[i].classList.contains('swiper-slide')) {
                             hiddenElements[i].classList.remove('swiper-slide');
