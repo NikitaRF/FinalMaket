@@ -87,8 +87,11 @@ window.onload = function bbb () {
         }
 
              mySwiper = new Swiper('.swiper-container', {
+               width: 240,
+               spaceBetween: 16,
                 pagination: {
                     el: '.swiper-pagination',
+                    clickable: true,
                 },
 
             });
@@ -100,8 +103,11 @@ window.onload = function bbb () {
             }
 
               mySwiper2 = new Swiper('.swiper-container2', {
+                width: 240,
+                spaceBetween: 16,
                 pagination: {
                   el: '.swiper-pagination',
+                  clickable: true,
                 },
 
               });
@@ -115,8 +121,13 @@ window.onload = function bbb () {
 
 
               mySwiper3 = new Swiper('.swiper-container3', {
+                width: 260,
+                // slidesOffsetBefore: 16,
+                // slidesOffsetAfter: 16,
+                spaceBetween: 16,
                 pagination: {
                   el: '.swiper-pagination',
+                  clickable: true,
                 },
 
               });

@@ -392,7 +392,9 @@ body {
     height: 85px;
     z-index: 1100; }
   .swiper-pagination {
-    display: block; } }
+    display: block; }
+  .brand-block {
+    margin-left: 16px; } }
 
 button:active, button:focus {
   outline: none; }
@@ -445,7 +447,7 @@ button::-moz-focus-inner {
   .equipment-block__list {
     margin-right: 0; }
   .equipment-block {
-    margin-left: 0; }
+    margin-left: 16px; }
   .footer_block {
     margin-bottom: 16px; } }
 
@@ -601,7 +603,8 @@ button::-moz-focus-inner {
     flex-wrap: wrap;
     border: 1px solid #EAEAEA; }
   .price-block {
-    flex-direction: row; }
+    flex-direction: row;
+    margin-left: 16px; }
   .price-block__row--title {
     display: none; }
   .price-block__title {
@@ -812,7 +815,8 @@ button::-moz-focus-inner {
 
 .highlight {
   display: none;
-  margin-right: -4px; }
+  margin-right: -4px;
+  background-image: url(./static/highlight.svg); }
 
 .menu__button--active-side {
   display: block;
