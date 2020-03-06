@@ -86,7 +86,7 @@ window.onload = function bbb () {
             }
         }
 
-             mySwiperBrandBlock = new Swiper('.swiper-container', {
+             mySwiperBrandBlock = new Swiper('.swiper-container-brand-block', {
                width: 240,
                spaceBetween: 16,
                 pagination: {
@@ -102,7 +102,7 @@ window.onload = function bbb () {
               }
             }
 
-              mySwiperEquipmentBlock = new Swiper('.swiper-container2', {
+              mySwiperEquipmentBlock = new Swiper('.swiper-container-equipment-block', {
                 width: 240,
                 spaceBetween: 16,
                 pagination: {
@@ -120,7 +120,7 @@ window.onload = function bbb () {
               }
 
 
-              mySwiperPriceBlock = new Swiper('.swiper-container3', {
+              mySwiperPriceBlock = new Swiper('.swiper-container-price-block', {
                 width: 260,
                 // slidesOffsetBefore: 16,
                 // slidesOffsetAfter: 16,
