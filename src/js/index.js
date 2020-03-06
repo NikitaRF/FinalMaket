@@ -56,7 +56,7 @@ window.onload = function bbb () {
       if (hiddenElements0[i].classList.contains("group__description--visible")) {
         hiddenElements0[i].classList.remove('group__description--visible');
         hiddenElements0[i].classList.add('group__description--unvisible');
-        buttonReadMore0.innerHTML = "Показать все";
+        buttonReadMore0.innerHTML = "Читать далее";
         iconReadMore0.style.transform = "rotate(360deg)";
       } else {
         hiddenElements0[i].classList.add('group__description--visible');

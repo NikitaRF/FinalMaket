@@ -223,11 +223,13 @@
 .menu__group {
     display: flex;
     margin-bottom: 32px;
+    width: 100%;
 }
 
 .menu__group--last-element{
   margin-bottom: 0;
 }
+
 
 
 .highlight {

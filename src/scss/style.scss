@@ -1,3 +1,9 @@
+@import "./style3.scss";
+@import "./swiper.min.css";
+@import "./style4.scss";
+@import "./style5.scss";
+@import "./style-side-menu.scss";
+
 @font-face {
     font-family: 'TT Lakes';
     src: url(../fonts/TTLakes-Bold.eot?#iefix) format("eot"),
@@ -34,7 +40,7 @@ body {
 
 }
 
-a, button {
+a, button, .menu__group {
   cursor: pointer
 }
 
@@ -143,7 +149,8 @@ a, button {
 }
 
 .read-more {
-  font-weight: 600;
+  font-family: TTLakes-Medium;
+  font-weight: 500;
   border: none;
   background: none;
   color: #1B1C21;
@@ -359,12 +366,4 @@ a, button {
 }
 
 
-
-
-@import "./style3.scss";
-@import "./swiper.min.css";
-@import "./style4.scss";
-@import "./style5.scss";
-
-@import "./style-side-menu.scss";
 
