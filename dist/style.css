@@ -68,9 +68,6 @@ body {
   width: 4px;
   height: 40px; }
 
-.title__second-title:nth-child(2n) {
-  padding: 0 10px; }
-
 .menu {
   margin-top: 24px;
   display: flex;
