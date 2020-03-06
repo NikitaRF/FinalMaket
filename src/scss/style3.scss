@@ -1,10 +1,3 @@
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #F8F8F8;
-}
-
-
 
 .container{
     width: 100%;
@@ -132,11 +125,11 @@ body {
 
 @media screen and (min-width: 1120px) {
 
-    .brand-block__brands__large-visible{
+    .brand-block__brands--large-visible{
         display: flex;
     }
 
-    .brand-block__brands__medium-visible{
+    .brand-block__brands--medium-visible{
         display: flex;
     }
 
@@ -144,7 +137,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1120px) {
 
-    .brand-block__brands__medium-visible{
+    .brand-block__brands--medium-visible{
         display: flex;
     }
 

@@ -212,7 +212,13 @@ window.onload = function bbb () {
     if (contentSide.classList.contains('content-side--visible')){
       contentSide.classList.remove('content-side--visible');
     }
+    if (feedbackMenu.classList.contains('content-side--visible')){
+      feedbackMenu.classList.remove('content-side--visible');
+    }
+
+
   })
+
   callSideUpperMenu.addEventListener('click', function(){
     callMenu.classList.add('content-side--visible');
     forModal.classList.add('bg-forModal--opacity');
@@ -242,14 +248,19 @@ window.onload = function bbb () {
 
   chatSide.addEventListener('click', function(){
     feedbackMenu.classList.add('content-side--visible');
-    forModal.classList.add('bg-forModal--opacity')
+    forModal.classList.add('bg-forModal--opacity');
     if (contentSide.classList.contains('content-side--visible')){
       contentSide.classList.remove('content-side--visible');
+
+    }
+    if (callMenu.classList.contains('content-side--visible')){
+      callMenu.classList.remove('content-side--visible');
     }
 
 
-
   })
+
+
   chatSideUpperMenu.addEventListener('click', function(){
     feedbackMenu.classList.add('content-side--visible');
     forModal.classList.add('bg-forModal--opacity');
@@ -265,7 +276,7 @@ window.onload = function bbb () {
 
 
   document.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27 && callMenu.classList.contains('content-side--visible')) {
+    if (evt.keyCode === 27 && feedbackMenu.classList.contains('content-side--visible')) {
       feedbackMenu.classList.remove('content-side--visible');
       forModal.classList.remove('bg-forModal--opacity');
     }
