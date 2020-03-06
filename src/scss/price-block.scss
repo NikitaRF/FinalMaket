@@ -1,6 +1,6 @@
-// <!--- Цены на услуги--->
+// Цены на услуги
 
-.get_commerce{
+.get-commerce{
   font-weight: 500;
   border: none;
   background: none;
@@ -10,7 +10,7 @@
 
 }
 
-.icon_get_commerce {
+.get-commerce__icon {
   height: 10px;
   width: 6px;
   background-image: url("../img/icon_get_commerce.svg");
@@ -20,7 +20,7 @@
   margin: auto 0 auto 9px;
 }
 
-.description_nds{
+.description-nds{
   max-width: 421px;
   margin:32px 0 16px 16px;
   color: #1B1C21;
@@ -62,7 +62,7 @@
   border: none;
 }
 
-.icon_price-block{
+.price-block__icon{
   height: 10px;
   width: 6px;
   background-image: url("../img/icon_price-block.svg");

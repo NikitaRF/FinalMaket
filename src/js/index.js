@@ -179,22 +179,22 @@ window.onload = function bbb () {
     let contentSide = document.querySelector('.content-side');
     let openButton = document.querySelector('.icon--burger');
     let closeButton = document.querySelector('.icon--burger-side');
-    let forModal = document.querySelector('.forModal');
+    let blurArea = document.querySelector('.blur-area');
 
   openButton.addEventListener('click', function(){
     contentSide.classList.add('content-side--visible');
-    forModal.classList.add('bg-forModal--opacity')
+    blurArea.classList.add('bg-blur-area--opacity')
   })
 
   closeButton.addEventListener('click', function(){
     contentSide.classList.remove('content-side--visible');
-    forModal.classList.remove('bg-forModal--opacity')
+    blurArea.classList.remove('bg-blur-area--opacity')
   })
 
   document.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27 && contentSide.classList.contains('content-side--visible')) {
       contentSide.classList.remove('content-side--visible');
-      forModal.classList.remove('bg-forModal--opacity');
+      blurArea.classList.remove('bg-blur-area--opacity');
     }
   });
 
@@ -204,11 +204,11 @@ window.onload = function bbb () {
 
   let callSide = document.querySelector('.icon--call-side');
   let callSideUpperMenu = document.querySelector('.icon--call');
-  let callMenu = document.querySelector('.call_menu');
+  let callMenu = document.querySelector('.call-menu');
   let closeButtonCallMenu = document.querySelector('.icon--close');
   callSide.addEventListener('click', function(){
     callMenu.classList.add('content-side--visible');
-    forModal.classList.add('bg-forModal--opacity');
+    blurArea.classList.add('bg-blur-area--opacity');
     if (contentSide.classList.contains('content-side--visible')){
       contentSide.classList.remove('content-side--visible');
     }
@@ -221,19 +221,19 @@ window.onload = function bbb () {
 
   callSideUpperMenu.addEventListener('click', function(){
     callMenu.classList.add('content-side--visible');
-    forModal.classList.add('bg-forModal--opacity');
+    blurArea.classList.add('bg-blur-area--opacity');
   })
 
 
   closeButtonCallMenu.addEventListener('click', function(){
     callMenu.classList.remove('content-side--visible');
-    forModal.classList.remove('bg-forModal--opacity')
+    blurArea.classList.remove('bg-blur-area--opacity')
   })
 
   document.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27 && callMenu.classList.contains('content-side--visible')) {
       callMenu.classList.remove('content-side--visible');
-      forModal.classList.remove('bg-forModal--opacity');
+      blurArea.classList.remove('bg-blur-area--opacity');
     }
   });
 
@@ -248,7 +248,7 @@ window.onload = function bbb () {
 
   chatSide.addEventListener('click', function(){
     feedbackMenu.classList.add('content-side--visible');
-    forModal.classList.add('bg-forModal--opacity');
+    blurArea.classList.add('bg-blur-area--opacity');
     if (contentSide.classList.contains('content-side--visible')){
       contentSide.classList.remove('content-side--visible');
 
@@ -263,14 +263,14 @@ window.onload = function bbb () {
 
   chatSideUpperMenu.addEventListener('click', function(){
     feedbackMenu.classList.add('content-side--visible');
-    forModal.classList.add('bg-forModal--opacity');
+    blurArea.classList.add('bg-blur-area--opacity');
   })
 
 
 
   closeButtonfeedbackMenu.addEventListener('click', function(){
     feedbackMenu.classList.remove('content-side--visible');
-    forModal.classList.remove('bg-forModal--opacity')
+    blurArea.classList.remove('bg-blur-area--opacity')
   })
 
 
@@ -278,18 +278,18 @@ window.onload = function bbb () {
   document.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27 && feedbackMenu.classList.contains('content-side--visible')) {
       feedbackMenu.classList.remove('content-side--visible');
-      forModal.classList.remove('bg-forModal--opacity');
+      blurArea.classList.remove('bg-blur-area--opacity');
     }
   });
 
 
 
 
-  forModal.addEventListener('click', function () {
+  blurArea.addEventListener('click', function () {
       contentSide.classList.remove('content-side--visible');
       callMenu.classList.remove('content-side--visible');
       feedbackMenu.classList.remove('content-side--visible');
-      forModal.classList.remove('bg-forModal--opacity');
+      blurArea.classList.remove('bg-blur-area--opacity');
 
   });
 

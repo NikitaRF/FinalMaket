@@ -1,0 +1,94 @@
+// Заказать звонок
+
+.call-menu {
+  width: 440px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  background: #FFFFFF;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+  height: 100vh;
+
+  transition: 0.3s ease-in-out;
+  transform: translateX(700px);
+}
+
+.call-menu__icon{
+  height: 10px;
+  width: 6px;
+  background-image: url("../img/icon_price-block.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s ease-in-out;
+  margin-left: 9px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.call-menu__tel {
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  padding: 12px 0 12px 16px;
+  width: 376px;
+  height: 48px;
+  margin: 24px 0 0 32px;
+}
+
+.title__menu_title{
+  margin-left: 30px;
+}
+
+.call-menu__fz{
+  font-size: 14px;
+  line-height: 16px;
+  color: #7E7E82;
+  margin-left: 32px;
+  font-family: TTLakes-Medium;
+}
+
+.call-menu__button{
+  margin-left: auto;
+  margin-right: 32px;
+  width: 166px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link{
+  text-decoration: none;
+  color: #FF3E79;
+}
+
+.icon--close{
+  background-image: url('../img/burger-close.svg');
+  margin-left: 24px;
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 768px){
+  .icon--close{
+    position: absolute;
+    left: -86px;
+  }
+}
+
+
+@media screen and (max-width: 480px){
+  .call-menu{
+    width: 100%;
+  }
+
+  .call-menu__tel{
+    width: 80%;
+  }
+}
+
+// Конец Заказать звонок

@@ -1,0 +1,37 @@
+// Верхнее меню в хедере
+
+.upper-menu {
+  display: none;
+  width: auto;
+  height: 88px;
+  border-bottom: 1px solid #D9FFF5;
+  background: #FFFFFF;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.upper-menu__logo{
+  margin-left: 22px;
+  background: url("../img/logo.svg") no-repeat;
+  width: 98px;
+  height: 52px;
+}
+
+.vert-line {
+  border-left: 2px solid #EAEAEA;
+  border-radius: 1px;
+  height: 32px;
+}
+
+@media screen and (max-width: 982px) {
+  .vert-line-left {
+    margin: 0 20px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .vert-line-left {
+    display: none;
+  }
+}

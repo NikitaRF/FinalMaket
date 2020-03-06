@@ -1,8 +1,11 @@
-@import "./style3.scss";
+@import "./upper-menu.scss";
+@import "./brand-block.scss";
 @import "./swiper.min.css";
-@import "./style4.scss";
-@import "./style5.scss";
-@import "./style-side-menu.scss";
+@import "./equipment-block.scss";
+@import "./price-block.scss";
+@import "./feedback-menu.scss";
+@import "./call-menu.scss";
+@import "./content-side.scss";
 
 @font-face {
     font-family: 'TT Lakes';
@@ -44,24 +47,22 @@ a, button, .menu__group {
   cursor: pointer
 }
 
-.upper-menu {
-    display: none;
-    width: auto;
-    height: 88px;
-    border-bottom: 1px solid #D9FFF5;
-    background: #FFFFFF;
-    justify-content: space-around;
-    align-items: center;
+.blur-area{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  z-index: -100;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
 }
-
-.upper-menu__logo{
-  margin-left: 22px;
-  background: url("../img/logo.svg") no-repeat;
-  width: 98px;
-  height: 52px;
+.bg-blur-area--opacity{
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
-
-
 
 .title {
   font-family: TT Lakes, Arial, sans-serif;
@@ -160,12 +161,6 @@ a, button, .menu__group {
   height: 24px;
 }
 
-.vert-line {
-  border-left: 2px solid #EAEAEA;
-  border-radius: 1px;
-  height: 32px;
-}
-
 .icon {
   width: 40px;
   height: 40px;
@@ -222,8 +217,23 @@ a, button, .menu__group {
   margin-top: 16px;
 }
 
+.menu__button-side,
+.block-mail__mail,
+.block-tell__tel,
+.menu-lang__button{
+  transition: opacity, color 0.2s ease-in-out;
+}
 
+.menu__button-side:hover,
+.block-mail__mail:hover,
+.block-tell__tel:hover,
+.menu-lang__button:hover{
+  color: #7E7E82;
+}
 
+.container{
+  width: 100%;
+}
 
 @media screen and (max-width: 982px) {
     .upper-menu{
@@ -246,10 +256,7 @@ a, button, .menu__group {
         margin-left: auto;
     }
 
-    .vert-line-left{
-        margin: 0 20px;
-        padding: 0;
-    }
+
 
     .info-block {
         display: flex;
@@ -299,9 +306,7 @@ a, button, .menu__group {
         width: 100% ;
     }
 
-    .vert-line-left{
-        display: none;
-    }
+
 
     .icon--profile{
         display: none;
@@ -357,6 +362,16 @@ a, button, .menu__group {
   .group__read-more {
     order: 2;
   }
+
+  main{
+    margin-left: 361px;
+  }
+
+  footer{
+    margin-left: 361px;
+  }
+
+
 }
 
 @media screen and (min-width: 1240px){
@@ -364,6 +379,7 @@ a, button, .menu__group {
     display: block;
   }
 }
+
 
 
 
