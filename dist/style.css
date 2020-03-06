@@ -759,10 +759,6 @@ button::-moz-focus-inner {
   background: #FFFFFF;
   align-items: center; }
 
-.upper-menu-side .icon:last-child {
-  margin-left: auto;
-  margin-right: 0; }
-
 .icon-side {
   width: 40px;
   height: 40px;
@@ -819,10 +815,11 @@ button::-moz-focus-inner {
   color: #FF3E79; }
 
 .menu__group {
-  display: flex; }
+  display: flex;
+  margin-bottom: 32px; }
 
-.menu__group:not(:first-child) {
-  margin-top: 32px; }
+.menu__group--last-element {
+  margin-bottom: 0; }
 
 .highlight {
   display: none;
