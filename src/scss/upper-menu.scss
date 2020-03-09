@@ -24,6 +24,10 @@
 }
 
 @media screen and (max-width: 982px) {
+  .upper-menu{
+    display: flex;
+  }
+
   .vert-line-left {
     margin: 0 20px;
     padding: 0;

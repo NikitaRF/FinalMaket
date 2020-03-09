@@ -104,10 +104,6 @@ margin-left: auto;
   font-family: TTLakes-Medium;
 }
 
-.swiper-container3{
-  overflow: hidden;
-}
-
 .price-block__info--visible{
   display: none;
 }
@@ -121,6 +117,10 @@ margin-left: auto;
   opacity: 0.72;
   margin-top: 16px;
   width: 100%;
+}
+
+.swiper-container-price-block{
+  overflow: hidden;
 }
 
 

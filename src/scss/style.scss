@@ -1,3 +1,5 @@
+@import "./blur-area.scss";
+@import "./icons.scss";
 @import "./upper-menu.scss";
 @import "./brand-block.scss";
 @import "./swiper.min.css";
@@ -6,8 +8,10 @@
 @import "./feedback-menu.scss";
 @import "./call-menu.scss";
 @import "./content-side.scss";
+@import "./footer.scss";
 
-//test
+
+
 
 @font-face {
     font-family: 'TT Lakes';
@@ -49,22 +53,7 @@ a, button, .menu__group {
   cursor: pointer
 }
 
-.blur-area{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #FFFFFF;
-  z-index: -100;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-.bg-blur-area--opacity{
-  z-index: 100;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
+
 
 .title {
   font-family: TT Lakes, Arial, sans-serif;
@@ -136,7 +125,7 @@ a, button, .menu__group {
   width: 50%;
 }
 
-.info-block__img img{
+.info-block__img--position--100{
   width: 100%;
   margin: 27px 0 27px 0;
 }
@@ -159,49 +148,6 @@ a, button, .menu__group {
   color: #1B1C21;
 }
 
-.icon-read-more {
-  height: 24px;
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  border: none;
-  background-color: #FF3E79;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon:hover {
-  transition: opacity, scale 0.2s ease-in-out;
-  transform: scale(1.1);
-  opacity: 0.8;
-}
-
-.icon--burger{
-  background-image: url('../img/burger.svg');
-}
-
-.icon--call {
-  background-image: url('../img/call.svg');
-}
-
-.icon--chat {
-  background-image: url('../img/chat.svg');
-}
-
-.icon--profile{
-  background-image: url('../img/profile.svg');
-}
-
-.icon--repair {
-  background-image: url('../img/repair.svg');
-}
-
-.icon--checkstatus{
-  background-image: url('../img/checkstatus.svg');
-}
 
 .title-block{
   border-top: 1px solid #D9FFF5;
@@ -238,26 +184,11 @@ a, button, .menu__group {
 }
 
 @media screen and (max-width: 982px) {
-    .upper-menu{
-        display: flex;
-    }
 
-    .icon--hidden{
-        display: none;
-    }
-
-    .icon {
-        margin:0 10px;
-    }
 
     .title__second-title--hidden{
         display:none;
     }
-
-    .icon--call{
-        margin-left: auto;
-    }
-
 
 
     .info-block {
@@ -300,27 +231,10 @@ a, button, .menu__group {
         display: flex;
     }
 
-    .icon {
-        margin:0;
-    }
-
     .info-block__img {
         width: 100% ;
     }
 
-
-
-    .icon--profile{
-        display: none;
-    }
-
-    .icon--chat{
-        display: none;
-    }
-
-    .icon--call{
-        display: none;
-    }
 }
 
 @media screen and (max-width: 768px){
@@ -366,10 +280,6 @@ a, button, .menu__group {
   }
 
   main{
-    margin-left: 361px;
-  }
-
-  footer{
     margin-left: 361px;
   }
 
