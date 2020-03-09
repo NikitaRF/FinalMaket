@@ -1,0 +1,54 @@
+// menu
+
+.menu {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+
+.menu__button{
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  margin-left: 16px;
+  border: none;
+  background: inherit;
+}
+
+.menu__button--active {
+  background: #FFFFFF;
+  border: 2px solid #B8FFEC;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 8px 9px 8px 16px;
+}
+
+.menu__group {
+  cursor: pointer
+}
+
+@media screen and (max-width: 982px) {
+
+  .menu {
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+
+  .menu {
+    overflow: scroll;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .upper-menu{
+    display: flex;
+  }
+
+}

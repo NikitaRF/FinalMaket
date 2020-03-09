@@ -6,16 +6,16 @@ import '../scss/style.scss';
 
 window.onload = function bbb () {
 
-    let hiddenElements0 = document.querySelectorAll('.group__description');
+    let hiddenElements0 = document.querySelectorAll('.info-group__description');
     let hiddenElements = document.querySelectorAll('.brand-block__brands');
     let hiddenElements2 = document.querySelectorAll('.equipment-block__list');
     let hiddenElements3 = document.querySelectorAll('.price-block__list');
-    let iconReadMore0 = document.querySelectorAll('.icon-read-more')[0];
-    let iconReadMore = document.querySelectorAll('.icon-read-more')[1];
-    let iconReadMore2 = document.querySelectorAll('.icon-read-more')[2];
-    let buttonReadMore0 = document.querySelectorAll('.read-more')[0];
-    let buttonReadMore = document.querySelectorAll('.read-more')[1];
-    let buttonReadMore2 = document.querySelectorAll('.read-more')[2];
+    let iconReadMore0 = document.querySelectorAll('.read-more__icon')[0];
+    let iconReadMore = document.querySelectorAll('.read-more__icon')[1];
+    let iconReadMore2 = document.querySelectorAll('.read-more__icon')[2];
+    let buttonReadMore0 = document.querySelectorAll('.read-more__button')[0];
+    let buttonReadMore = document.querySelectorAll('.read-more__button')[1];
+    let buttonReadMore2 = document.querySelectorAll('.read-more__button')[2];
 
     function visibleMore () {
 
@@ -53,16 +53,16 @@ window.onload = function bbb () {
   function visibleMore0 () {
 
     for (let i = 0; i < hiddenElements0.length; i++) {
-      if (hiddenElements0[i].classList.contains("group__description--visible")) {
-        hiddenElements0[i].classList.remove('group__description--visible');
-        hiddenElements0[i].classList.add('group__description--unvisible');
+      if (hiddenElements0[i].classList.contains("info-group__description--visible")) {
+        hiddenElements0[i].classList.remove('info-group__description--visible');
+        hiddenElements0[i].classList.add('info-group__description--unvisible');
         buttonReadMore0.innerHTML = "Читать далее";
         iconReadMore0.style.transform = "rotate(360deg)";
       } else {
-        hiddenElements0[i].classList.add('group__description--visible');
+        hiddenElements0[i].classList.add('info-group__description--visible');
         buttonReadMore0.innerHTML = "Скрыть";
         iconReadMore0.style.transform = "rotate(180deg)";
-        hiddenElements0[i].classList.remove('group__description--unvisible');
+        hiddenElements0[i].classList.remove('info-group__description--unvisible');
       }
     }
   }

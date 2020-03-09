@@ -1,0 +1,47 @@
+// read-more
+
+.read-more {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.read-more__icon {
+  height: 24px;
+  width: 24px;
+  background-image: url(../img/read-more.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s ease-in-out;
+}
+
+.read-more__button {
+  font-family: TTLakes-Medium;
+  font-weight: 500;
+  border: none;
+  background: none;
+  color: #1B1C21;
+}
+
+@media screen and (max-width: 982px) {
+
+  .read-more {
+    order: 2;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .read-more--unvisible {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 982px) {
+
+  .read-more {
+    order: 2;
+  }
+}

@@ -1,0 +1,44 @@
+// title
+
+.title {
+  font-family: TT Lakes, Arial, sans-serif;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  letter-spacing: -0.6px;
+}
+
+.title__main-title{
+  margin-right: auto;
+}
+
+.title__highlight {
+  margin-right: 12px;
+  background: #41F6D7;
+  border-radius: 2px;
+  width: 4px;
+  height: 40px;
+
+}
+
+.title__second-title{
+  font-family: "TT Lakes-regular", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.2px;
+  background: none;
+  border: none;
+}
+
+.title-block{
+  border-top: 1px solid #D9FFF5;
+}
+
+
+@media screen and (max-width: 982px) {
+  .title__second-title--hidden {
+    display: none;
+  }
+}
