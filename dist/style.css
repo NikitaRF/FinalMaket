@@ -354,7 +354,8 @@
   display: none; }
 
 .swiper-container-brand-block {
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 /* Swiper */
 .swiper-pagination {
@@ -410,7 +411,7 @@
   .shadow {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 10%;
     bottom: 28.21%;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     width: 24px;
